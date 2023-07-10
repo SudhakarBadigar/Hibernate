@@ -1,0 +1,14 @@
+package com.jsp.project.TestProject;
+
+public class Student {
+
+	private int usn;
+	private String name;
+	private double marks;
+	
+	
+	
+	
+	
+	
+}

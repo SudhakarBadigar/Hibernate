@@ -1,0 +1,15 @@
+package com.jsp.project.TestProject;
+
+/**
+ * Hello world!
+ *
+ */
+public class AppDao 
+{
+	
+	
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}
