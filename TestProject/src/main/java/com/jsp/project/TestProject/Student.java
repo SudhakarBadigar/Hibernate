@@ -8,6 +8,7 @@ import javax.persistence.Id;
 
 //pojo class or java Bean class
 //@Entity
+
 @Entity
 public class Student {
 
@@ -19,7 +20,9 @@ public class Student {
 	
 	//getters and setters method
 //	@Id
+	
 	@Id
+	
 	public int getUsn() {
 		return usn;
 	}

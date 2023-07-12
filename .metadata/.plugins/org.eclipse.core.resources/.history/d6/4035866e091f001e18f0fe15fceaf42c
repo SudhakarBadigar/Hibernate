@@ -1,0 +1,31 @@
+package com.jsp.project.TestProject;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+/**
+ * Hello world!
+ *
+ */
+public class AppDao 
+{
+	
+	
+    public static void main( String[] args )
+    {
+    	Student st = new Student();
+    	st.setUsn(10);
+    	st.setName("RamaKrishna");
+    	st.setMarks(99.9);
+    	
+    	//jdbc connection
+    	Configuration c = new Configuration();
+    	c.configure("hibernate.cfg.xml");
+    	SessionFactory bsf = c.buildSessionFactory();
+    	
+    	Session os = bsf.openSession();
+    	
+    	
+    }
+}

@@ -43,7 +43,7 @@
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
     <version>6.2.5.Final</version>
-    <type>pom</type>
+    <type>pom</type>  // New version ie 6 onwards of hibernate core relocation dont support org.hibernate.cfg.configuration
 </dependency> -->
 
 <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->

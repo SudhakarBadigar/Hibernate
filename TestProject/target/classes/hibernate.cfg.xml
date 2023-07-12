@@ -15,8 +15,13 @@
 
 <!-- Dialect configuration -->
     <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>	
-	<property name="hbm2ddl.auto">create</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">true</property>
+	<property name="format_sql">true</property>
 
+<!-- Mapping configuration -->
+<!-- <mapping class="com.jsp.project.TestProject.Student"/> -->
+<mapping class= "com.jsp.project.TestProject.Employee"/>
 	
 	</session-factory>
 	

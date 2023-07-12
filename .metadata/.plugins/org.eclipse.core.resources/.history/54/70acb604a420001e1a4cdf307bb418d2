@@ -1,0 +1,24 @@
+package com.jsp.project.TestProject;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+public class AppDaoFetch 
+{
+    public static void main( String[] args )
+    {    	
+    	//jdbc connection
+    	Configuration c = new Configuration();
+    	c.configure("hibernate.cfg.xml");
+    	SessionFactory bsf = c.buildSessionFactory();    	
+    	Session os = bsf.openSession();
+    	Employee e = os.get(Employee.class, 1);
+    	System.out.println("...............");
+    	System.out.println(e);
+    	
+    	
+    	os.close();
+    	bsf.close();
+    	
+    	
+    }
+}
