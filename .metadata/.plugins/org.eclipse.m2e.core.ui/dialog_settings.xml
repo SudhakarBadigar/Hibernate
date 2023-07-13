@@ -26,12 +26,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.dumping.HQL"/>
 			<item value="com.jsp.project.TestProject"/>
 		</list>
 		<list key="groupId">
+			<item value="com.dumping"/>
 			<item value="com.jsp.project"/>
 		</list>
 		<list key="artifactId">
+			<item value="HQL"/>
 			<item value="TestProject"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -18,6 +18,7 @@ public class AppDaoFetchLoad {
 		
 		Employee l2 = os.load(Employee.class, 10);
 		System.out.println(l2);
+	
 		os.close();
 		bsf.close();
 	}

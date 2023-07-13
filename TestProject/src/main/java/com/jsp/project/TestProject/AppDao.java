@@ -22,9 +22,9 @@ public class AppDao
     	
     	
     	Employee emp = new Employee();
-    	emp.setName("Hanumantha");
-    	emp.setSalary(99.8);
-    	emp.setX(24);
+    	emp.setName("harris");
+    	emp.setSalary(45.3);
+    	emp.setX(176);
     	
     	
     	

@@ -19,9 +19,9 @@ public class AppDaoFetchget
     	System.out.println("...............");
     	System.out.println(e1);
     	
-    	Employee e2 = os.get(Employee.class, 7);
+    	Employee e2 = os.get(Employee.class, 3);
     	System.out.println("...............");
-    	System.out.println(e2);
+    	System.out.println(e2.getX());
     	
     	
     	os.close();
