@@ -21,6 +21,7 @@
 	<!--Mapping configuration  -->
 	<mapping class="com.dumping.HQL.OldStudentData"/>
 	<mapping class="com.dumping.HQL.NewStudentData"/>
+	<mapping class="com.dumping.HQL.Employee"/>
 	
 	
 	

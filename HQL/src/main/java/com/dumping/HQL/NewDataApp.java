@@ -18,8 +18,12 @@ public class NewDataApp {
 		Query q = session.createQuery(hql);
 		int i = q.executeUpdate();
 		System.out.println("no of rows dumped from old to new table"+i);
-		
 		tx.commit();
+
+//		System.out.println(".................");
+//		NewStudentData t = session.get(NewStudentData.class, 5);
+//		System.out.println(t);
+		
 		session.close();
 		sf.close();
 		

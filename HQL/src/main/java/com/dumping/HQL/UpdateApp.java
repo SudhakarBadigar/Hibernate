@@ -17,7 +17,7 @@ public class UpdateApp {
 		Transaction tx = openSession.beginTransaction();
 		
 		Query query= openSession.createQuery(hql);
-		int executeUpdate = query.executeUpdate();
+		int executeUpdate = query.executeUpdate(); 
 		tx.commit();
 		System.out.println("updated row"+executeUpdate);		
 		

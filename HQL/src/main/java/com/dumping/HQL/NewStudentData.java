@@ -11,6 +11,10 @@ public class NewStudentData {
 	private String name;
 	private String email;
 	private String address;
+	
+	
+	public NewStudentData() {
+	}
 	public NewStudentData(int id, String name, String email, String address) {
 		super();
 		this.id = id;
