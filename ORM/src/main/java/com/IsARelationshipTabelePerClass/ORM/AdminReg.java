@@ -3,8 +3,8 @@ package com.IsARelationshipTabelePerClass.ORM;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
-//@Entity
-//@DiscriminatorValue("Admin")
+@Entity
+@DiscriminatorValue("ar")
 public class AdminReg extends Employee{
 	private String branchname;
 

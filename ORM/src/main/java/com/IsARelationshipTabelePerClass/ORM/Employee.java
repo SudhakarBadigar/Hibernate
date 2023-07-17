@@ -1,6 +1,7 @@
 package com.IsARelationshipTabelePerClass.ORM;
 
 import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
@@ -10,7 +11,11 @@ import javax.persistence.MappedSuperclass;
 //@Entity
 ////@DiscriminatorColumn(name = "etype")
 //@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@MappedSuperclass
+//@MappedSuperclass
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="etype", discriminatorType = DiscriminatorType.STRING)
 public class Employee {
 	@Id
 	private int id;
