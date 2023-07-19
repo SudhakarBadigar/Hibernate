@@ -16,10 +16,14 @@ public class ClientDao {
 		Transaction tx = os.beginTransaction();
 		
 		Software soft = new Software(1, "chris", "chril@hmail.com", "springBoot");
+		Software soft1 = new Software(3, "morris", "moris@hmail.com", "spring");
 		Hardware hard = new Hardware(2, "ponting", "point@ymail.com" , 5);
+		Hardware hard1 = new Hardware(4, "ricky", "ricky@ymail.com" , 8);
 		
 		os.save(soft);
 		os.save(hard);
+		os.save(soft1);
+		os.save(hard1);
 			
 		tx.commit();
 		

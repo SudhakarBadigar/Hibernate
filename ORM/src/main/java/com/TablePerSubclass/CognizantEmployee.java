@@ -3,13 +3,15 @@ package com.TablePerSubclass;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 //@DiscriminatorColumn(name="etype",discriminatorType = DiscriminatorType.STRING)
 public class CognizantEmployee {
+	@Id
 	private int id;
 	private String name;
 	private String email;

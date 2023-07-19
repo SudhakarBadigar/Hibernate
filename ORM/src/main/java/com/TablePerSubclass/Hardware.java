@@ -2,9 +2,11 @@ package com.TablePerSubclass;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 //@DiscriminatorValue("hard")
 @Entity
+@PrimaryKeyJoinColumn(name="id")
 public class Hardware extends CognizantEmployee {
  private int workingHours;
 
