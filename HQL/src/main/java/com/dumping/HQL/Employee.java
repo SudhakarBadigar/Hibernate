@@ -11,6 +11,8 @@ public class Employee {
 	private double salary;
 	private String mail;
 	private String address;
+
+//comments in the employee class
 	
 	public Employee() {
 
